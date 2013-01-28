@@ -1,5 +1,11 @@
 = link_to "Home", root_path, :class => 'brand'
 %ul.nav
+  %li= link_to 'Live Betting', '#'
+  %li= link_to 'Lotto', '#'
+  %li= link_to 'All Sports', '#'
+  %li= link_to 'Non Sports Betting', '#'
+  %li= link_to 'Results' ,'#'
+  %li= link_to 'Enter Ticket Draw', '#'
   - if user_signed_in?
     %li
       = link_to('Logout', destroy_user_session_path, :method=>'delete')
