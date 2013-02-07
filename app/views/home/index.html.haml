@@ -1,13 +1,44 @@
-%div{:class => 'span3'}
-  %p
-    %h4 Tab 1
+%div{:class => 'span2'}
+  %div{ :class => 'well sidebar-nav' }
+    %ul{ :class => 'nav nav-list' }
+      %li{ :class => 'nav-header' }
+        All Sports
+      %li= link_to 'Soccer', '#'
+      %li= link_to 'Cricket', '#'
+      %li= link_to 'Rugby Union', '#'
+      %li= link_to 'Golf', '#'
+      %li= link_to 'Snooker', '#'
+      %li= link_to 'Basketball', '#'
+      %li= link_to 'Boxing', '#'
+      %li= link_to 'Rugby League', '#'
+      %li= link_to 'Volleyball' ,'#'
+      %li= link_to 'Ice Hockey', '#'
+      %li= link_to 'Horse Racing', '#'
+      %li= link_to 'Formula 1', '#'
+      %li= link_to 'Tennis' ,'#'
+      %li= link_to 'Alpine Skiing', '#'
+      %li= link_to 'Baseball', '#'
+      %li= link_to 'American Football', '#'
+      %li= link_to 'Athletics', '#'
+      %li= link_to 'Table Tennis', '#'
+      %li= link_to 'Skii JUmping', '#'
+      %li= link_to 'Rally', '#'
+      %li= link_to 'Motorbikes' , '#'
+      %li= link_to 'Hockey' , '#'
+      %li= link_to 'Handball', '#'
+      %li= link_to 'Futsal', '#'
+      %li= link_to 'Cycling', '#'
+      %li= link_to 'Darts', '#'
+      %li= link_to 'Combat Sports' ,'#'
+      %li= link_to 'Aussie Rules Football', '#'
+      %li= link_to 'Cross country Skiing', '#'
 %div{:class => 'span5'}
   %p
     %h6 Today's Odds
-    %table{ :class => 'table table-striped' }
+    %table{ :class => 'table' }
       %thead
         %tr
-          %th Table heading
+          %th Soccer
           %th &nbsp;
           %th 1
           %th X
@@ -25,7 +56,7 @@
           %td 1.20
           %td 6.30
           %td 9.40
-    %table{ :class => 'table table-stripped' }
+    %table{ :class => 'table' }
       %thead
         %tr
           %th Tennis
@@ -46,7 +77,7 @@
           %td 1.20
           %td 6.30
           %td 9.40
-    %table{ :class => 'table table-striped' }
+    %table{ :class => 'table' }
       %thead
         %tr
           %th Basket Ball
@@ -61,6 +92,26 @@
           %td 7.50
           %td 3.67
           %td 2.50
-%div{:class => 'span3'}
+%div{:class => 'span4'}
   %p
     %h6 Hot Bets
+    %table{ :class => 'table' }
+      %tbody
+        %tr
+          %td 11:00 PM 1/30
+          %td Real Madrid v Barcelona
+          %td 3.10
+          %td 3.80
+          %td 2.05
+      %tr
+        %td 6:00 PM 1/30
+        %td Tromso v Widzow Lodz
+        %td 2.70
+        %td 3.20
+        %td 2.35
+      %tr
+        %td 9:00 PM
+        %td Vaslui v FC Capenhagen
+        %td 2.75
+        %td 3.20
+        %td 2.30

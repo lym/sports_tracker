@@ -1,2 +1,9 @@
 == Fortune Bet
+
 A primarily informational web app for a betting company
+.content {color: "closer to orange" }
+
+Add  content slider
+for news popups like Bwins
+
+fortunebet.com
