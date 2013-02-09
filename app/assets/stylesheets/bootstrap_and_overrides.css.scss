@@ -1,5 +1,5 @@
 @import "bootstrap";
-body { background-color: #001400; padding-top: 90px; color: #FC0 }
+body { background-color: #1d1717; /*padding-top: 90px;*/ color: #FC0 }
 .navbar-inner {
   min-height: 40px;
   padding-left: 20px;
@@ -12,7 +12,7 @@ body { background-color: #001400; padding-top: 90px; color: #FC0 }
   background-image: linear-gradient(to bottom, #3a3f44, #272b30);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3a3f44', endColorstr='#ff272b30', GradientType=0);
-  border: 1px solid #0c0d0e;
+  border: 1px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -20,6 +20,12 @@ body { background-color: #001400; padding-top: 90px; color: #FC0 }
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
   *zoom: 1;
+}
+nav .navbar-inner{
+  background-color: #001400;
+}
+.navbar-inner .container{
+  background-color: #1d1717;
 }
 .navbar .nav > li > a { color: #ffa500; text-shadow: 0 1px 0 #111010; }
 .well { background-color: #343434;
@@ -36,5 +42,16 @@ body { background-color: #001400; padding-top: 90px; color: #FC0 }
 .table td { font-size: 10px; 
   line-height: 15px;
   font-weight: bold;
+}
+#top-meta {
+  padding-top: 45px;
+}
+#daily-odds {
+  width: 500px;
+  background-color: #212121;
+}
+#hot-bets {
+  background-color: #343434;
+  margin-left: 10px;
 }
 @import "bootstrap-responsive";

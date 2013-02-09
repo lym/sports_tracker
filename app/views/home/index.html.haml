@@ -43,12 +43,17 @@
               / REGULAR IMAGE PANEL
               =image_tag 'tempphoto-1.jpg', :alt => 'temp'
               %div{:class => 'photo-meta-data'}
-                /Photo Credit: <a href="http://flickr.com/photos/astrolondon/2396265240/">Kaustav Bhattacharya</a><br />
+                Photo Credit: <a href="http://flickr.com/photos/astrolondon/2396265240/">Kaustav Bhattacharya</a><br />
                 %span
                   "Free Tibet" Protest at the Olympic Torch Rally
           %div{:class => 'panel', :title => 'Panel 2'}
             %div{:class => 'wrapper'}
               / PANEL CONTENT
+              =image_tag 'tempphoto-2.jpg', :alt => 'temp'
+              %div{:class => 'photo-meta-data'}
+                Chicago Bears at Seattle Seahawks
+                %span
+                  Fifth field goal, overtime win for Seahawks
           %div{:class => 'panel', :title => 'Panel 3'}
             %div{:class => 'wrapper'}
               / EXAMPLE OF OTHER PANEL POSSIBILITIES
@@ -64,13 +69,28 @@
                 %li Vegetable oil for frying
           %div{:class => 'panel', :title => 'Panel 4'}
             %div{:class => 'wrapper'}
-              / PANEL CONTENT
+              /PANEL CONTENT
+              =image_tag 'tempphoto-4.jpg', :alt => 'temp'
+              %div{:class => 'photo-meta-data'}
+                A poem by Shel Silverstein
+                %span
+                  Falling up
           %div{:class => 'panel', :title => 'Panel 5'}
             %div{:class => 'wrapper'}
               / PANEL CONTENT
+              =image_tag 'bryan_baker.jpg', :alt => 'temp'
+              %div{:class => 'photo-meta-deta'}
+                Bryan Baker at the 2012 Wimbledon Championships
+                %span
+                  An empty span
           %div{:class => 'panel', :title => 'Panel 6'}
             %div{:class => 'wrapper'}
-      /        PANEL CONTENT
+              /PANEL CONTENT
+              %h1 A Tale Of Two Cities
+              %p
+                %em Charles Dickins
+                %blockquote
+                  It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to heaven, we were all going direct the other way - in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only
 
       / TO MAKE THESE THUMBNAILS ACTUALLY WORK, BOTH THE HASH VALUE (#1, ETC.)
       /AND THE CLASS="CROSS-LINK" ARE REQUIRED
@@ -88,7 +108,7 @@
         %div
           =link_to (image_tag 'tempphoto-6thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#6', :class => 'cross-link'
 
-  %p
+  %div{:id => 'daily-odds'}
     %h6 Today's Odds
     %table{ :class => 'table' }
       %thead
@@ -148,7 +168,7 @@
           %td 3.67
           %td 2.50
 %div{:class => 'span4'}
-  %p
+  %div{:id => 'hot-bets'}
     %h6 Hot Bets
     %table{ :class => 'table' }
       %tbody
@@ -170,3 +190,69 @@
         %td 2.75
         %td 3.20
         %td 2.30
+      %tr
+        %td 2:00 PM 2/7
+        %td Aarhus v Silkeborg IF
+        %td 2.00
+        %td 3.25
+        %td 3.30
+      %tr
+        %td 3.30 PM 2/7
+        %td FC Vestsjaelland v Randers FC
+        %td 2.75
+        %td 3.20
+        %td 2.30
+      %tr
+        %td 3:30 PM 2/7
+        %td FC Otelul Galati v PFC Ludogorets
+        %td 2.20
+        %td 3.30
+        %td 2.30
+      %tr
+        %td 6:00 PM 2/7
+        %td Torpedo Kutaisi v Dinamo Bucharest
+        %td 3.25
+        %td 3.30
+        %td 2.00
+      %tr
+        %td 10:30 PM 2/8
+        %td Paris Saint-Germain v SC Bastia
+        %td 1.15
+        %td 7.00
+        %td 17.50
+      %tr
+        %td 11:00 PM 2/8
+        %td UD Almeria v Sabadell
+        %td 1.70
+        %td 3.40
+        %td 4.60
+      %tr
+        %td 2:00 PM 2/7
+        %td Victor Troicki(SRB) v Jan Hajek(CZE)
+        %td 1.22
+        %td 3.80
+      %tr
+        %td 9:00 PM 2/7
+        %td Rhyne Williams(USA) v Alex Kuznetsov(USA)
+        %td 1.62
+        %td 2.10
+      %tr
+        %td 9:00 PM 2/7
+        %td Richard Gasquet(FRA) v Gael Monfils(FRA)
+        %td 1.75
+        %td 2.25
+      %tr
+        %td 10:30 PM 2/7
+        %td Denys Molchanov(UKR) v Robby Ginepri(USA)
+        %td 2.80
+        %td 1.36
+      %tr
+        %td 10:30 PM 2/7
+        %td Victor Hanescu(ROU) v Julien Benneteau(FRA)
+        %td 4.40
+        %td 1.17
+      %tr
+        %td 1:30 AM 2/8
+        %td James Blake(USA) v Michael Russel(USA)
+        %td 1.50
+        %td 2.35
