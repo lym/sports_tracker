@@ -5,11 +5,11 @@ body { background-color: #1d1717; /*padding-top: 90px;*/ color: #FC0 }
   padding-left: 20px;
   padding-right: 20px;
   background-color: #001400;
-  background-image: -moz-linear-gradient(top, #3a3f44, #272b30);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3a3f44), to(#272b30));
-  background-image: -webkit-linear-gradient(top, #3a3f44, #272b30);
-  background-image: -o-linear-gradient(top, #3a3f44, #272b30);
-  background-image: linear-gradient(to bottom, #3a3f44, #272b30);
+  background-image: -moz-linear-gradient(top, #1d1717, #1d1717);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1d1717), to(#1d1717));
+  background-image: -webkit-linear-gradient(top, #1d1717, #1d1717);
+  background-image: -o-linear-gradient(top, #1d1717, #1d1717);
+  background-image: linear-gradient(to bottom, #1d1717, #1d1717);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3a3f44', endColorstr='#ff272b30', GradientType=0);
   border: 1px;
@@ -24,6 +24,13 @@ body { background-color: #1d1717; /*padding-top: 90px;*/ color: #FC0 }
 nav .navbar-inner{
   background-color: #001400;
 }
+.nav > li > a:hover {
+  background-color: white;
+}
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color : white;
+}
 .navbar-inner .container{
   background-color: #1d1717;
 }
@@ -32,7 +39,7 @@ nav .navbar-inner{
   border: 1px solid #212121;
 }
 .navbar-inner ul {
-  background-color: #003b00;
+  background-color: #1d1717;
 } 
 .well a {
   color: #ffffff;
