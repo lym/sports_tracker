@@ -1,37 +1,102 @@
 %div{:class => 'span2'}
-  %div{ :class => 'well sidebar-nav' }
+  %div{ :class => 'well' }
     %ul{ :class => 'nav nav-list' }
       %li{ :class => 'nav-header' }
         All Sports
-      %li= link_to 'Soccer', '#'
-      %li= link_to 'Cricket', '#'
-      %li= link_to 'Rugby Union', '#'
-      %li= link_to 'Golf', '#'
-      %li= link_to 'Snooker', '#'
-      %li= link_to 'Basketball', '#'
-      %li= link_to 'Boxing', '#'
-      %li= link_to 'Rugby League', '#'
-      %li= link_to 'Volleyball' ,'#'
-      %li= link_to 'Ice Hockey', '#'
-      %li= link_to 'Horse Racing', '#'
-      %li= link_to 'Formula 1', '#'
-      %li= link_to 'Tennis' ,'#'
-      %li= link_to 'Alpine Skiing', '#'
-      %li= link_to 'Baseball', '#'
-      %li= link_to 'American Football', '#'
-      %li= link_to 'Athletics', '#'
-      %li= link_to 'Table Tennis', '#'
-      %li= link_to 'Skii JUmping', '#'
-      %li= link_to 'Rally', '#'
-      %li= link_to 'Motorbikes' , '#'
-      %li= link_to 'Hockey' , '#'
-      %li= link_to 'Handball', '#'
-      %li= link_to 'Futsal', '#'
-      %li= link_to 'Cycling', '#'
-      %li= link_to 'Darts', '#'
-      %li= link_to 'Combat Sports' ,'#'
-      %li= link_to 'Aussie Rules Football', '#'
-      %li= link_to 'Cross country Skiing', '#'
+      %li
+        =link_to('#') do 
+          =image_tag 'ball.ico', :size => '21x21'
+          %span Soccer
+      %li
+        =link_to '#' do
+          =image_tag 'cricket.ico', :size => '21x21'
+          %span Cricket
+      %li
+        =link_to '#' do
+          =image_tag 'rugby.ico', :size => '21x21'
+          %span Rugby Union'
+      %li
+        =link_to '#' do
+          =image_tag 'kolf.ico', :size => '21x21'
+          %span Golf
+      /%li= link_to 'Snooker', '#'
+      %li
+        =link_to '#' do
+          =image_tag 'basketball.ico', :size => '21x21'
+          %span Basketball
+      %li
+        =link_to('#') do
+          =image_tag 'boxing_gloves.ico', :size => '21x21'
+          %span Boxing
+      %li
+        =link_to '#' do
+          =image_tag 'rugby.ico', :size => '21x21'
+          %span Rugby League
+      %li
+        =link_to '#' do
+          =image_tag 'volleyball_ball.ico', :size => '21x21'
+          %span Volleyball
+      %li
+        =link_to '#' do
+          =image_tag 'horse_rider.ico', :size => '21x21'
+          %span Horse Racing
+      %li
+        =link_to '#' do
+          =image_tag 'icehockey.png', :size => '21x21'
+          %span Ice Hockey
+      %li
+        =link_to '#' do
+          =image_tag 'toyotagt_one.ico', :size => '21x21'
+          %span Formula 1
+      %li
+        = link_to('#') do
+          =image_tag 'tennis.ico', :size => '21x21'
+          %span Tennis
+      %li
+        =link_to '#' do
+          =image_tag 'skiing.png', :size => '21x21'
+          %span Alpine Skiing
+      %li
+        =link_to '#' do
+          =image_tag 'baseball_ball.ico', :size => '21x21'
+          %span Baseball
+      %li
+        =link_to '#' do
+          =image_tag 'american_football.ico', :size => '21x21'
+          %span American Football
+      %li
+        =link_to '#' do
+          =image_tag 'clicknrun.ico', :size => '21x21'
+          %span Athletics
+      %li
+        =link_to '#' do
+          =image_tag 'table_tennis.ico', :size => '21x21'
+          %span Table Tennis
+      /%li= link_to 'Skii Jumping', '#'
+      /%li= link_to 'Rally', '#'
+      %li
+        =link_to '#' do
+          =image_tag 'shuttlecock.ico', :size => '21x21'
+          %span Badminton
+      %li
+        =link_to '#' do
+          =image_tag 'bowling.ico', :size => '21x21'
+          %span Bowling
+      %li
+        =link_to '#' do
+          =image_tag 'motorcycle.ico', :size => '21x21'
+          %span Motorbikes
+      /%li= link_to 'Hockey' , '#'
+      /%li= link_to 'Handball', '#'
+      /%li= link_to 'Futsal', '#'
+      /%li= link_to 'Cycling', '#'
+      %li
+        =link_to '#' do
+          =image_tag 'dart.ico', :size => '21x21'
+          %span Darts
+      /%li= link_to 'Combat Sports' ,'#'
+      /%li= link_to 'Aussie Rules Football', '#'
+      /%li= link_to 'Cross country Skiing', '#'
 
 %div{:class => 'span5'}
   %div{:id => 'page-wrap'}
@@ -109,64 +174,65 @@
           =link_to (image_tag 'tempphoto-6thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#6', :class => 'cross-link'
 
   %div{:id => 'daily-odds'}
-    %h6 Today's Odds
-    %table{ :class => 'table' }
-      %thead
-        %tr
-          %th Soccer
-          %th &nbsp;
-          %th 1
-          %th X
-          %th 2
-      %tbody
-        %tr
-          %td Date
-          %td Player1 v Player2
-          %td 1
-          %td X
-          %td 2
-        %tr
-          %td 29 Jan 22:45
-          %td Man Utd v Arsenal fc
-          %td 1.20
-          %td 6.30
-          %td 9.40
-    %table{ :class => 'table' }
-      %thead
-        %tr
-          %th Tennis
-          %th &nbsp;
-          %th 1
-          %th X
-          %th 2
-      %tbody
-        %tr
-          %td 26 Jan 10:00
-          %td R.Federer v A.Murray
-          %td 2.85
-          %td 3.25
-          %td 2.25
-        %tr
-          %td 24 Jan 09:00
-          %td N.Djokovic v D.Ferrer
-          %td 1.20
-          %td 6.30
-          %td 9.40
-    %table{ :class => 'table' }
-      %thead
-        %tr
-          %th Basket Ball
-          %th &nbsp;
-          %th 1
-          %th X
-          %th 2
-      %tbody
-        %tr
-          %td 1 Jan 03:00
-          %td NY Knicks v M.Heat
-          %td 7.50
-          %td 3.67
-          %td 2.50
+    %dv{:class => 'well'}
+      %h6 Today's Odds
+      %table{ :class => 'table' }
+        %thead
+          %tr
+            %th Soccer
+            %th &nbsp;
+            %th 1
+            %th X
+            %th 2
+        %tbody
+          %tr
+            %td Date
+            %td Player1 v Player2
+            %td 1
+            %td X
+            %td 2
+          %tr
+            %td 29 Jan 22:45
+            %td Man Utd v Arsenal fc
+            %td 1.20
+            %td 6.30
+            %td 9.40
+      %table{ :class => 'table' }
+        %thead
+          %tr
+            %th Tennis
+            %th &nbsp;
+            %th 1
+            %th X
+            %th 2
+        %tbody
+          %tr
+            %td 26 Jan 10:00
+            %td R.Federer v A.Murray
+            %td 2.85
+            %td 3.25
+            %td 2.25
+          %tr
+            %td 24 Jan 09:00
+            %td N.Djokovic v D.Ferrer
+            %td 1.20
+            %td 6.30
+            %td 9.40
+      %table{ :class => 'table' }
+        %thead
+          %tr
+            %th Basket Ball
+            %th &nbsp;
+            %th 1
+            %th X
+            %th 2
+        %tbody
+          %tr
+            %td 1 Jan 03:00
+            %td NY Knicks v M.Heat
+            %td 7.50
+            %td 3.67
+            %td 2.50
 %div{:class => 'span4'}
   %div{:id => 'hot-bets'}
     %h6 Hot Bets

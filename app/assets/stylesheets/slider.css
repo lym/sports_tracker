@@ -24,6 +24,7 @@ a	{
   min-height: 400px;
   background-color: #212121;
   border-right: 1px solid #0d0d0d;
+  border-radius: 4px;
 	/*background: url(bg.png) top center; */ }
 
 
@@ -39,7 +40,7 @@ blockquote	{ padding: 0 20px; margin-left: 20px; border-left: 20px solid #ccc; f
 /*
 	SLIDER
 */
-.slider-wrap								{ width: 419px; position: absolute; top: 40px; left: 40px; }			
+.slider-wrap								{ width: 419px; position: absolute; top: 40px; left: 40px; bottom: 2px; }			
 .stripViewer .panelContainer 
 .panel ul									{ text-align: left; margin: 0 15px 0 30px; }
 .stripViewer								{ position: relative; overflow: hidden; width: 419px; height: 285px; }

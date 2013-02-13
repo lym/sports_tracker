@@ -41,6 +41,17 @@ nav .navbar-inner{
 .navbar-inner ul {
   background-color: #1d1717;
 } 
+//NAV LIST
+//--------
+.nav-list > li > a,
+.nav-list .nav-header {
+  text-shadow: none;
+  font-size: 12px;
+  color: #ffb733;
+}
+.well {
+  padding: 1px;
+}
 .well a {
   color: #ffffff;
   text-shadow: 0 0 0 0;
@@ -56,9 +67,12 @@ nav .navbar-inner{
 #daily-odds {
   width: 500px;
   background-color: #212121;
+  border-radius: 4px;
 }
 #hot-bets {
   background-color: #343434;
   margin-left: 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 @import "bootstrap-responsive";
