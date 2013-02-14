@@ -1,13 +1,6 @@
 = link_to (image_tag "fort_bet_logo.png", :size => "220x51"), root_path, :class => 'brand'
-%div{:id => 'top-meta'}
-%ul.nav
-  %li= link_to 'Live Betting', '#'
-  %li= link_to 'Lotto', '#'
-  %li= link_to 'All Sports', '#'
-  %li= link_to 'Non Sports Betting', '#'
-  %li= link_to 'Results' ,'#'
-  %li= link_to 'Enter Ticket Draw', '#'
-%ul{ :class => 'nav pull-right' }
+/%div{:id => 'top-meta'}
+%ul{ :class => 'login-area' }
   - if user_signed_in?
     %li
       = link_to('Logout', destroy_user_session_path, :method=>'delete')
@@ -20,3 +13,12 @@
   - else
     %li
       = link_to('Register now!', new_user_registration_path)
+%ul.nav
+  %li= link_to 'Live Betting', '#'
+  %li= link_to 'Lotto', '#'
+  %li= link_to 'All Sports', '#'
+  %li= link_to 'Non Sports Betting', '#'
+  %li= link_to 'Results' ,'#'
+  %li= link_to 'Enter Ticket Draw', '#'
+  %li= link_to 'Our Outlets', '#'
+%ul{ :class => 'nav pull-right' }

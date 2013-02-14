@@ -121,41 +121,30 @@
                   Fifth field goal, overtime win for Seahawks
           %div{:class => 'panel', :title => 'Panel 3'}
             %div{:class => 'wrapper'}
-              / EXAMPLE OF OTHER PANEL POSSIBILITIES
-              =image_tag 'scotch-egg.jpg', :alt => 'scotch egg', :class => 'floatLeft'
-              %h1 
-                How to Cook a Scotch Egg
-              %ul
-                %li 6 hard-boiled eggs, well chilled (i try to cook them to just past soft boiled stage, then stick them in the coldest part of the fridge to firm up)
-                %li 1 pound good quality sausage meat (i used ground turkey meat, seasoned with sage, white pepper, salt and a tiny bit of maple syrup)
-                %li 1/2 cup AP flour
-                %li 1-2 eggs, beaten
-                %li 3/4 cup panko-style bread crumbs
-                %li Vegetable oil for frying
+              =image_tag 'alonso.jpg', :alt => 'Fernando Alonso'
+              %div{:class => 'photo-meta-data'}
+                Fernando Alonso of team Ferrari relaxing just before a practice session
           %div{:class => 'panel', :title => 'Panel 4'}
             %div{:class => 'wrapper'}
               /PANEL CONTENT
-              =image_tag 'tempphoto-4.jpg', :alt => 'temp'
+              =image_tag 'nfl.jpg', :alt => 'temp'
               %div{:class => 'photo-meta-data'}
-                A poem by Shel Silverstein
-                %span
-                  Falling up
+                NFL's divisional playoffs
           %div{:class => 'panel', :title => 'Panel 5'}
             %div{:class => 'wrapper'}
               / PANEL CONTENT
               =image_tag 'bryan_baker.jpg', :alt => 'temp'
-              %div{:class => 'photo-meta-deta'}
+              %div{:class => 'photo-meta-data'}
                 Bryan Baker at the 2012 Wimbledon Championships
+                %br
                 %span
                   An empty span
           %div{:class => 'panel', :title => 'Panel 6'}
             %div{:class => 'wrapper'}
               /PANEL CONTENT
-              %h1 A Tale Of Two Cities
-              %p
-                %em Charles Dickins
-                %blockquote
-                  It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to heaven, we were all going direct the other way - in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only
+              =image_tag 'cr_higuan_benzema.jpg', :alt => 'madrid forwards'
+              %div{:class => 'photo-meta-data'}
+                Cristiano Ronaldo, Gonzalo Higuan and Karim Benzema
 
       / TO MAKE THESE THUMBNAILS ACTUALLY WORK, BOTH THE HASH VALUE (#1, ETC.)
       /AND THE CLASS="CROSS-LINK" ARE REQUIRED
@@ -165,13 +154,13 @@
         %div
           =link_to (image_tag 'tempphoto-2thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#2', :class => 'cross-link'
         %div
-          =link_to (image_tag 'tempphoto-3thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#3', :class => 'cross-link'
+          =link_to (image_tag 'alonso.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#3', :class => 'cross-link'
         %div
-          =link_to (image_tag 'tempphoto-4thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#4', :class => 'cross-link'
+          =link_to (image_tag 'nfl.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#4', :class => 'cross-link'
         %div
-          =link_to (image_tag 'tempphoto-5thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#5', :class => 'cross-link'
+          =link_to (image_tag 'bryan_baker.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#5', :class => 'cross-link'
         %div
-          =link_to (image_tag 'tempphoto-6thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#6', :class => 'cross-link'
+          =link_to (image_tag 'cr_higuan_benzema.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#6', :class => 'cross-link'
 
   %div{:id => 'daily-odds'}
     %dv{:class => 'well'}
