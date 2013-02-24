@@ -1,0 +1,58 @@
+/%div{:class => 'news-popups'}
+/pop-up info area
+%div{:class => 'slider-wrap'}
+  %div{:id => 'main-photo-slider', :class => 'csw'}
+    %div{:class => 'panelContainer'}
+      %div{:class => 'panel', :title => 'Panel 1'}
+        %div{:class => 'wrapper'}
+          =image_tag 'tempphoto-1.jpg', :alt => 'temp'
+          %div{:class => 'photo-meta-data'}
+            Photo Credit: <a href="http://flickr.com/photos/astrolondon/2396265240/">Kaustav Bhattacharya</a><br />
+            %span
+              "Free Tibet" Protest at the Olympic Torch Rally
+      %div{:class => 'panel', :title => 'Panel 2'}
+        %div{:class => 'wrapper'}
+          =image_tag 'tempphoto-2.jpg', :alt => 'temp'
+          %div{:class => 'photo-meta-data'}
+            Chicago Bears at Seattle Seahawks
+            %span
+              Fifth field goal, overtime win for Seahawks
+      %div{:class => 'panel', :title => 'Panel 3'}
+        %div{:class => 'wrapper'}
+          =image_tag 'alonso.jpg', :alt => 'Fernando Alonso'
+          %div{:class => 'photo-meta-data'}
+            Fernando Alonso of team Ferrari relaxing just before a practice session
+      %div{:class => 'panel', :title => 'Panel 4'}
+        %div{:class => 'wrapper'}
+          =image_tag 'nfl.jpg', :alt => 'temp'
+          %div{:class => 'photo-meta-data'}
+            NFL's divisional playoffs
+      %div{:class => 'panel', :title => 'Panel 5'}
+        %div{:class => 'wrapper'}
+          =image_tag 'bryan_baker.jpg', :alt => 'temp'
+          %div{:class => 'photo-meta-data'}
+            Bryan Baker at the 2012 Wimbledon Championships
+            %br
+            %span
+              An empty span
+      %div{:class => 'panel', :title => 'Panel 6'}
+        %div{:class => 'wrapper'}
+          =image_tag 'cr_higuan_benzema.jpg', :alt => 'madrid forwards'
+          %div{:class => 'photo-meta-data'}
+            Cristiano Ronaldo, Gonzalo Higuan and Karim Benzema
+
+  / TO MAKE THESE THUMBNAILS ACTUALLY WORK, BOTH THE HASH VALUE (#1, ETC.)
+  /AND THE CLASS="CROSS-LINK" ARE REQUIRED
+
+  =link_to (image_tag 'tempphoto-1thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#1', :class => 'cross-link active-thumb'
+  %div{:id => 'movers-row'}
+    %div
+      =link_to (image_tag 'tempphoto-2thumb.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#2', :class => 'cross-link'
+    %div
+      =link_to (image_tag 'alonso.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#3', :class => 'cross-link'
+    %div
+      =link_to (image_tag 'nfl.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#4', :class => 'cross-link'
+    %div
+      =link_to (image_tag 'bryan_baker.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#5', :class => 'cross-link'
+    %div
+      =link_to (image_tag 'cr_higuan_benzema.jpg', :class => 'nav-thumb', :alt => 'temp-thumb'), '#6', :class => 'cross-link'
