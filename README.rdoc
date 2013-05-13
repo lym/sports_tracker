@@ -7,3 +7,5 @@ Add  content slider
 for news popups like Bwins
 
 fortunebet.com
+
+Add careers link in footer

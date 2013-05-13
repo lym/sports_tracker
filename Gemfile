@@ -33,4 +33,5 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'simple_form'
 gem 'bootstrap-sass'
-gem 'devise'
+gem "devise", "> 2.2.1"
+gem 'activeadmin'

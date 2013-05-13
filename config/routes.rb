@@ -1,4 +1,8 @@
 Fortune::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   authenticated :user do
     root :to => 'home#index'
   end
@@ -10,6 +14,8 @@ Fortune::Application.routes.draw do
   get 'home/legal'
 
   get 'sports/soccer'
+
+  get 'results/index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -9,8 +9,10 @@
   <div class="form-inputs">
     <%= f.input :email, :required => true, :autofocus => true %>
 
-    <% if resource.class.reconfirmable && resource.unconfirmed_email.present? %>
-      <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+    <% if false %>
+      <% if resource.class.reconfirmable && resource.unconfirmed_email.present? %>
+        <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+      <% end %>
     <% end %>
 
     <%= f.input :password, :autocomplete => "off", :hint => "leave it blank if you don't want to change it", :required => false %>
