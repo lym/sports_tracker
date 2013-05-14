@@ -1,0 +1,55 @@
+.container
+  .row
+    .span5
+      .contact-form
+        %h6 Welcome to the Players' Lounge Help Area.  
+        %p Please remember to select the option that best describes your inquiry. This will help us to more accurately answer your inquiry.
+
+    .span5
+      .well
+        %h6 Frequently ASked
+        %p Optionally you can browse through the inquiries previously made by other customers.
+        %div{:class => "container-fluid"}
+          %div{:class => "accordion", :id => "accordion2"}
+            %div{:class => "accordion-group"}
+              %div{:class => "accordion-heading"}
+                %a{:href => "#collapseOne", :class => "accordion-toggle", :data => {:toggle => "collapse", :parent => "#accordion2"}}
+                  Question 1
+              %div{:id => "collapseOne", :class => "accordion-body collapse", :style => "height: 0px;"}
+                %div{:class => "accordion-inner"}
+                  %div
+                    %p
+                      Here's where you'll find the answer to question 1
+
+            %div{:class => "accordion-group"}
+              %div{:class => "accordion-heading"}
+                %a{:href => "#collapseTwo", :class => "accordion-toggle", :data => {:toggle => "collapse", :parent => "#accordion2"}}
+                  Question 2
+              %div{:id => "collapseTwo", :class => "accordion-body collapse"}
+                %div{:class => "accordion-inner"}
+                  %div
+                    %p
+                      Here lies the answer to question 2
+
+            %div{:class => "accordion-group"}
+              %div{:class => "accordion-heading"}
+                %a{:href => "#collapseThree", :class => "accordion-toggle", :data => {:toggle => "collapse", :parent => "#accordion2"}}
+                  Question 3
+              %div{:id => "collapseThree", :class => "accordion-body collapse"}
+                %div{:class => "inner"}
+                  %div
+                    %p
+                      This part contains the answer to the question specied in question 3 
+
+        %h6 Other contact options
+        %ul
+          %li Phone Number: +256414693838
+          %li Mobile: 0793339935, 0793410555
+          %li Email
+        %h6 Physical Location
+        %p
+          Fortune Bet
+          %br
+          Plot 4, second street
+          %br
+          Industrial area opposite Euro tyres

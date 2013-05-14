@@ -3,4 +3,13 @@ class HomeController < ApplicationController
   end
   def legal
   end
+
+  def privacy
+  end
+
+  def about
+  end
+
+  def contact
+  end
 end

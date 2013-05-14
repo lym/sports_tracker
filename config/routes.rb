@@ -1,4 +1,6 @@
 Fortune::Application.routes.draw do
+  get "matches/index"
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -12,6 +14,9 @@ Fortune::Application.routes.draw do
   resources :users
 
   get 'home/legal'
+  get 'home/privacy'
+  get 'home/about'
+  get 'home/contact'
 
   get 'sports/soccer'
 
