@@ -12,4 +12,7 @@ class HomeController < ApplicationController
 
   def contact
   end
+
+  def coming_soon
+  end
 end

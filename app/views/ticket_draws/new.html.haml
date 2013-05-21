@@ -1,0 +1,19 @@
+.container
+  .rows
+    .span9
+      %h4 Enter your details here.
+
+      = simple_form_for(@ticket_draw, :url => ticket_draws_create_path) do |f| 
+        = f.error_notification 
+
+        %p= f.label :name 
+        =f.text_field :name 
+
+        %div{:class => "form-inputs"}
+          = f.input :email, :required => true, :autofocus => true 
+          = f.input :ticket_number, :required => true 
+
+        %div{:class => "form-actions"}
+          = f.button :submit, "Enter Draw"
+
+-#= render "devise/shared/links" 

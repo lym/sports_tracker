@@ -1,4 +1,16 @@
 Fortune::Application.routes.draw do
+  get "jobs/index"
+
+  get "jobs/show"
+
+  get "inquiries/new"
+
+  post "inquiries/create"
+
+  get "ticket_draws/new"
+
+  post "ticket_draws/create"
+
   get "matches/index"
 
   ActiveAdmin.routes(self)
@@ -17,6 +29,7 @@ Fortune::Application.routes.draw do
   get 'home/privacy'
   get 'home/about'
   get 'home/contact'
+  get 'home/coming_soon'
 
   get 'sports/soccer'
 

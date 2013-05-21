@@ -3,8 +3,8 @@
     .span5
       .contact-form
         %h6 Welcome to the Fortune Bet Help Area.  
-        =simple_form_for(@inquiry, :url => inquiry_path, :html => {:class => 'form-horizontal' }) do |f| 
         %p Please remember to select the option that best describes your inquiry. This will help us to more accurately answer your inquiry.
+        =simple_form_for(@inquiry, :url => inquiries_create_path, :html => {:class => 'form-horizontal' }) do |f| 
           = f.error_notification
           = f.input :name, :autofocus => true
           = f.input :email, :required => true
@@ -53,7 +53,7 @@
         %h6 Other contact options
         %ul
           %li Phone Number: +256414693838
-          %li Mobile: (0793) 339-935, (0793) 410-555, (0794) 464-939, (0793) 339-934
+          %li Mobile: 0793339935, 0793410555
           %li Email
         %h6 Physical Location
         %p

@@ -1,0 +1,25 @@
+.container
+  .row
+    .span2
+    .span9
+      %h4 Welcome to Fortune Bet. We appreciate your interest in working with us
+      -if jobs_available?
+        %table{:class => 'table table-stripped'}
+          %thead
+            %tr
+              %th Job title
+              %th Job Description
+              %th Qualifications
+          %tbody
+            - @jobs.each do |job|
+              %tr
+                %td=job.title
+                %td=job.description
+                %td=job.qualifications
+      -else
+        %p
+          There are currently no open positions right now. Please check back in some other time. 
+          You could also drop us your email and we'll let you know when an openning is available.
+
+          =email_field_tag 'job_applicant'
+          =submit_tag 'submit', :class => 'btn btn-primary'
