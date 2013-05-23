@@ -1,5 +1,4 @@
-= link_to (image_tag "fort_bet_logo.png", :size => "220x51"), root_path, :class => 'brand'
-/%div{:id => 'top-meta'}
+= link_to (image_tag "logo.png", :size => "220x51"), root_path, :class => 'brand'
 %ul{ :class => 'login-area' }
   - if user_signed_in?
     %li
@@ -15,12 +14,11 @@
       = link_to('Register now!', new_user_registration_path)
   =link_to (image_tag 'slogan.png'), 'http://www.imperialholding.eu/'
 %ul.nav
-  %li= link_to 'Live Betting', home_coming_soon_path
-  /%li= link_to 'Lotto', '#'
   %li= link_to 'All Sports', matches_index_path
-  %li= link_to 'Non Sports Betting', home_coming_soon_path 
   %li= link_to 'Results' , results_index_path
   %li= link_to 'Enter Ticket Draw', ticket_draws_new_path
+  %li= link_to 'Live Betting', home_coming_soon_path
+  %li= link_to 'Non Sports Betting', home_coming_soon_path 
   %form{:class => 'navbar-search pull-right'}
     %input{:type => 'text', :class => 'search-query', :placeholder => 'Search'}
   %span{:class => 'text-warning release'} Alpha Version
