@@ -4,6 +4,10 @@ body {
   /*padding-top: 90px;*/ 
   color: #FC0 
 }
+.container-fluid {
+  max-width: 1244px;
+  margin: 0 auto;
+}
 address {
   margin-bottom: 2px;
   font-style: italic;
@@ -16,11 +20,14 @@ address {
 hr {
   border-bottom: 0.5px dotted $gray;
 }
+.nav {
+  padding-top: 20px;
+}
 .navbar {
   margin-bottom: 0;
 }
 .navbar .brand {
-  padding: 10px 20px 10px 69px;
+  //padding: 10px 20px 10px 69px;
 }
 .navbar-inner {
   min-height: 40px;
@@ -77,6 +84,14 @@ nav .navbar-inner{
 .nav-list > li > a:hover {
   background-color: #343434;
   color: white;
+}
+.pull-right a {
+  font-size: 10px;
+  color: #ffa500;
+  padding-right: 12px;
+}
+.pull-right li {
+  list-style: none;
 }
 .well {
   //padding-left: 2px;
@@ -231,4 +246,16 @@ p.s-taber {
 .release {
   font-size: 67%;
 }
+/*.hbTitle {
+  text-align: center;
+  line-height: 35px;
+  font-size: 1.2em;
+  float: left;
+  width: 100%;
+  height: 35px;
+  z-index: 56;
+  background-color: #000;
+  color: darkkhaki;
+  margin-top: -1px;
+}*/
 @import "bootstrap-responsive";

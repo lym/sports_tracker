@@ -35,3 +35,4 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem "devise", "> 2.2.1"
 gem 'activeadmin'
+gem "paperclip", "~> 3.4.2"

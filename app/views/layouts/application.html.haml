@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
-    %title= content_for?(:title) ? yield(:title) : "Myapp"
+    %title= content_for?(:title) ? yield(:title) : "Fortune Bet"
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
     = stylesheet_link_tag "home", :media => "all"
@@ -13,14 +13,14 @@
   %body
     %header.navbar
       %nav.navbar-inner
-        .container
+        .container-fluid
           = render 'layouts/navigation'
     #main{:role => "main"}
-      .container
+      .container-fluid
         .content
-          .row
+          .row-fluid
             .span12
               = render 'layouts/messages'
-            = yield
+              = yield
         %footer
           = render 'layouts/footer'

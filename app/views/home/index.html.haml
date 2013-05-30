@@ -1,18 +1,23 @@
-%div{:class => 'span2'}
-  %div{ :class => 'well' }
-    %ul{ :class => 'nav nav-list' }
-      %li{ :class => 'nav-header' }
-        = render 'all_sports'
+.row-fluid
+  %div{:class => 'span2'}
+    %div{ :class => 'well' }
+      %ul{ :class => 'nav nav-list' }
+        %li{ :class => 'nav-header' }
+          = render 'all_sports'
 
-%div{:class => 'span5'}
-  %div{:id => 'page-wrap'}
-    =render 'slider'
+  %div{:class => 'span5'}
+    %div{:id => 'page-wrap'}
+      =render 'slider'
 
-  %div{:id => 'daily-odds'}
-    %div{:class => 'well'}
-      /=render 'daily_odds'
-      =render 'tabstrip'
+    %div{:id => 'daily-odds'}
+      %div{:class => 'well'}
+        /=render 'daily_odds'
+        =render 'tabstrip'
 
-%div{:class => 'span5'}
-  .well
-    =render 'hot_bets'
+  %div{:class => 'span5'}
+    -#.well
+      .btn 
+        Betlist/Gamelist
+    .well
+      =render :partial => 'hot_bets', :locals => {:match => @matches }
+

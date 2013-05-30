@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @matches = Match.all
   end
   def legal
   end

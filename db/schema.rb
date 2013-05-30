@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130514135051) do
+ActiveRecord::Schema.define(:version => 20130528032551) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -46,6 +46,14 @@ ActiveRecord::Schema.define(:version => 20130514135051) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
+  create_table "bet_options", :force => true do |t|
+    t.string   "name"
+    t.integer  "number_of_sub_options"
+    t.string   "available_for"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
+
   create_table "inquiries", :force => true do |t|
     t.string   "name"
     t.string   "email"
@@ -72,11 +80,18 @@ ActiveRecord::Schema.define(:version => 20130514135051) do
     t.string   "sport"
     t.string   "player_one"
     t.string   "player_two"
-    t.decimal  "player_one_wins"
-    t.decimal  "player_two_wins"
-    t.decimal  "players_draw"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "tournament"
+  end
+
+  create_table "news_viewers", :force => true do |t|
+    t.string   "title"
+    t.string   "body"
+    t.string   "excerpt"
+    t.string   "author"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "ticket_draws", :force => true do |t|

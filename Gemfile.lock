@@ -56,6 +56,10 @@ GEM
       xpath (~> 1.0.0)
     childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -130,6 +134,12 @@ GEM
     multi_json (1.7.2)
     nokogiri (1.5.6)
     orm_adapter (0.4.0)
+    paperclip (3.4.2)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
     pg (0.14.1)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
@@ -221,6 +231,7 @@ DEPENDENCIES
   factory_girl_rails (>= 3.3.0)
   haml
   jquery-rails
+  paperclip (~> 3.4.2)
   pg
   rails (= 3.2.11)
   rspec-rails (>= 2.10.1)
