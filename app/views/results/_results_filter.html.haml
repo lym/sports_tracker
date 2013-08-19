@@ -1,0 +1,7 @@
+Results Filter
+%h6 Select sport
+=select_tag "Sport", options_for_select(["Soccer", "Tennis"])
+%h6 Select time range
+=select_tag "Time", options_for_select(["Yesterday", "2 days back", "Last Year"])
+/=select_date
+=submit_tag "Filter"

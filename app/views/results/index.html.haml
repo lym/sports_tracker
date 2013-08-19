@@ -1,4 +1,7 @@
 %div{:class => 'span2'}
+  .well
+    .filter-wrapper
+      =render :partial => 'results_filter'
   %div{ :class => 'well' }
     %ul{ :class => 'nav nav-list' }
       %li{ :class => 'nav-header' }
@@ -27,53 +30,79 @@
             %td{:class => 'match-date'} 5:00 PM 2/14
             %td{:class => 'teams'} 
               %span{:class => 'team-name'}Manchester United 
-              %span{:class => 'team-odd'} 2
-            %td{:class => 'teams'} Real Madrid 5
+              %span{:class => 'pull-right'} 2
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}Real Madrid 
+              %span{:class => 'pull-left'}5
           %tr
             %td{:class => 'match-date'} 5:25 PM 2/14
-            %td{:class => 'teams'} Manchester City 1
-            %td{:class => 'teams'} Chelsea FC 1
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name'}Manchester City 
+              %span{:class => 'pull-right'}1
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}Chelsea FC 
+              %span{:class => 'pull-left'}1
           %tr
             %td{:class => 'match-date'} 9:00 PM 2/25
-            %td{:class => 'teams'} Udinese 0
-            %td{:class => 'teams'} SSC Napoli 1
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name'}Udinese 
+              %span{:class => 'pull-right'}0
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}SSC Napoli 
+              %span{:class => 'pull-left'}1
           %tr
             %td{:class => 'match-date'} 11:00 PM 2/25
-            %td{:class => 'teams'} West Ham United 0
-            %td{:class => 'teams'} Tottenham Hotspur 4
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name'}West Ham United 
+              %span{:class => 'pull-right'}0
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}Tottenham Hotspur 
+              %span{:class => 'pull-left'}4
           %tr
             %td{:class => 'match-date'} 5:00 PM 2/14
             %td{:class => 'teams'} 
               %span{:class => 'team-name'}Manchester United 
-              %span{:class => 'team-odd'} 2.3
-            %td{:class => 'teams'} Real Madrid 1.5
-          %tr
-            %td{:class => 'match-date'} 5:25 PM 2/14
-            %td{:class => 'teams'} Manchester City 1.21
-            %td{:class => 'teams'} Chelsea FC 2.01
-          %tr
-            %td{:class => 'match-date'} 9:00 PM 2/25
-            %td{:class => 'teams'} Udinese 2.90
-            %td{:class => 'teams'} SSC Napoli 2.35
-          %tr
-            %td{:class => 'match-date'} 11:00 PM 2/25
-            %td{:class => 'teams'} West Ham United 3.30
-            %td{:class => 'teams'} Tottenham Hotspur 2.15
+              %span{:class => 'pull-right'}3
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}Real Madrid 
+              %span{:class => 'pull-left'}5
           %tr
             %td{:class => 'match-date'} 5:00 PM 2/14
             %td{:class => 'teams'} 
               %span{:class => 'team-name'}Manchester United 
-              %span{:class => 'team-odd'} 2.3
-            %td{:class => 'teams'} Real Madrid 1.5
+              %span{:class => 'pull-right'} 2
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}Real Madrid 
+              %span{:class => 'pull-left'}5
           %tr
             %td{:class => 'match-date'} 5:25 PM 2/14
-            %td{:class => 'teams'} Manchester City 1.21
-            %td{:class => 'teams'} Chelsea FC 2.01
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name'}Manchester City 
+              %span{:class => 'pull-right'}1
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}Chelsea FC 
+              %span{:class => 'pull-left'}1
           %tr
             %td{:class => 'match-date'} 9:00 PM 2/25
-            %td{:class => 'teams'} Udinese 2.90
-            %td{:class => 'teams'} SSC Napoli 2.35
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name'}Udinese 
+              %span{:class => 'pull-right'}0
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}SSC Napoli 
+              %span{:class => 'pull-left'}1
           %tr
             %td{:class => 'match-date'} 11:00 PM 2/25
-            %td{:class => 'teams'} West Ham United 3.30
-            %td{:class => 'teams'} Tottenham Hotspur 2.15
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name'}West Ham United 
+              %span{:class => 'pull-right'}0
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}Tottenham Hotspur 
+              %span{:class => 'pull-left'}4
+          %tr
+            %td{:class => 'match-date'} 5:00 PM 2/14
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name'}Manchester United 
+              %span{:class => 'pull-right'}3
+            %td{:class => 'teams'} 
+              %span{:class => 'team-name pull-right'}Real Madrid 
+              %span{:class => 'pull-left'}5

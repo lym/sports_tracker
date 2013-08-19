@@ -1,21 +1,13 @@
 =render 'layouts/locations'
 %hr
-%div{:class => 'row-fluid'}
-  %div{:class => 'span4 foot'}
-    %p 
-      %h6 Legal
-      %li= link_to 'Rules and Regulations', home_legal_path
-      %li= link_to 'Privacy', home_privacy_path
-  %div{:class => 'span4 foot'}
-    %p
-      %h6 Fortune Bet
-      %li= link_to 'About Us', home_about_path
-      %li= link_to 'Contact', inquiries_new_path
-      %li= link_to 'Careers', jobs_index_path
-  %div{:class => 'span4 foot'}
-    %p
-      %h6 Social
-      %li= link_to 'Facebook', '#'
-      %li= link_to 'Twitter', '#'
-      %li= link_to 'Google+', '#'
-      %li= link_to 'Linkedin', '#'
+.centered-content
+  %nav{:id => 'footer-navi'}
+    = link_to 'Rules and Regulations', home_legal_path
+    = link_to 'Privacy', home_privacy_path
+    = link_to 'About Us', home_about_path
+    = link_to 'Contact', inquiries_new_path
+    = link_to 'Careers', jobs_index_path
+    /= link_to 'Facebook', '#'
+    /= link_to 'Twitter', '#'
+    /= link_to 'Google+', '#'
+    /= link_to 'Linkedin', '#'

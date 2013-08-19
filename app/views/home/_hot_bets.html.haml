@@ -1,11 +1,12 @@
 %table{ :class => 'table-dbates' }
   %caption Hot Bets
   %thead 
-    -#%tr 
-      %td Time:Date
-      %td First Team Wins
-      %td Draw
-      %td Second Team Wins
+    %tr 
+      %th Time:Date
+      %th Match code
+      %th First Team Wins
+      %th Draw
+      %th Second Team Wins
   %tbody
     -#-match.each do |match|
       %tr
@@ -18,7 +19,7 @@
     %tr
       %td{:class => 'match-date'} 6:00 PM 1/30
       %td{:class => 'teams'}12319
-      %td{:class => 'teams'} Tromso 2.70 v Widzow Lodz
+      %td{:class => 'teams'} Tromso 2.70
       %td{:class => 'teams'} 3.20
       %td{:class => 'teams'} Widzow Lodz 2.35
       -#%tr
