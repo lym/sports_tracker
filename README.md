@@ -1,11 +1,7 @@
-== Fortune Bet
+## Sports Waging
 
-A primarily informational web app for a betting company
-.content {color: "closer to orange" }
+## Trying it out
+Assuming you have ruby and rails installed.
 
-Add  content slider
-for news popups like Bwins
-
-fortunebet.com
-
-Add careers link in footer
+- clone project
+- enter root directory and hit `rails s`
