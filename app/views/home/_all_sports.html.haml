@@ -1,6 +1,6 @@
 All Sports
 %li
-  =link_to sports_soccer_path do 
+  =link_to soccer_sports_path do 
     =image_tag 'sport_icons/ball.ico', :size => '21x21'
     %span Soccer
 %li
@@ -45,7 +45,7 @@ All Sports
     =image_tag 'sport_icons/toyotagt_one.ico', :size => '21x21'
     %span Formula 1
 %li
-  = link_to('#') do
+  = link_to(tennis_sports_path, :title => 'tennis odds') do
     =image_tag 'sport_icons/tennis.ico', :size => '21x21'
     %span Tennis
 %li

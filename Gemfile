@@ -20,6 +20,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem 'better_errors'
+  gem 'capistrano', '~> 2.15.5'
+end
+
 gem "rspec-rails", ">= 2.10.1", :group => [:development, :test]
 group :test do
   gem "cucumber-rails", ">= 1.3.0"
@@ -27,6 +32,10 @@ group :test do
   gem "database_cleaner", ">= 0.7.2"
   gem "factory_girl_rails", ">= 3.3.0"
   gem "email_spec", ">= 1.2.1"
+end
+
+group :production do
+  gem 'thin'
 end
 
 gem 'jquery-rails'

@@ -68,6 +68,11 @@ Given /^I exist as an unconfirmed user$/ do
   create_unconfirmed_user
 end
 
+Given /^am on the home view$/ do
+  visit '/'
+end
+
+
 ### WHEN ###
 When /^I sign in with valid credentials$/ do
   create_visitor
@@ -132,6 +137,10 @@ When /^I look at the list of users$/ do
   visit '/'
 end
 
+When /^I click on "(.*?)"$/ do |arg1|
+  click_link 'tennis odds'
+end
+
 ### THEN ###
 Then /^I should be signed in$/ do
   page.should have_content "Logout"
@@ -188,4 +197,8 @@ end
 Then /^I should see my name$/ do
   create_user
   page.should have_content @user[:name]
+end
+
+Then /^I should see "(.*?)"$/ do |arg1|
+  page.should have_content 'Tennis Betting Odds'
 end

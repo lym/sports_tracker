@@ -1,4 +1,11 @@
 Fortune::Application.routes.draw do
+
+  resources :sports do
+    collection do
+      get 'soccer'
+      get 'tennis'
+    end
+  end
   get "jobs/index"
 
   get "jobs/show"

@@ -2,6 +2,7 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
+require 'rspec/core' # because the Rspec.configure method is defined here
 require 'email_spec'
 require 'rspec/autorun'
 
