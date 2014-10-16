@@ -61,6 +61,7 @@ module Fortune
 
     # Need this to work with heroku
     config.assets.initialize_on_precompile = false
+    config.assets.precompile = %w( *.js *.css )
     
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
