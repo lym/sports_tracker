@@ -58,6 +58,9 @@ module Fortune
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Need this to work with heroku
+    config.assets.initialize_on_precompile = false
     
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
