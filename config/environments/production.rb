@@ -15,7 +15,7 @@ Fortune::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -23,7 +23,7 @@ Fortune::Application.configure do
   # Enable asset precompilation in production
    #config.assets.precompile += %w( *.js *.css )
   #config.assets.precompile += %w(active_admin.css )
-  config.assets.precompile << /\A(?!active_admin).*\.(js|css)\z/
+  #config.assets.precompile << /\A(?!active_admin).*\.(js|css)\z/
    #config.assets.precompile += %w(active_admin.js global.js rsvp.js)
    #config.assets.precompile += %w( *.js *.css )
 

@@ -60,7 +60,7 @@ module Fortune
     config.assets.version = '1.0'
 
     # Need this to work with heroku
-    config.assets.initialize_on_precompile = false
+    #config.assets.initialize_on_precompile = false
     
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
