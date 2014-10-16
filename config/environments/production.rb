@@ -20,6 +20,13 @@ Fortune::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # Enable asset precompilation in production
+   #config.assets.precompile += %w( *.js *.css )
+  #config.assets.precompile += %w(active_admin.css )
+  config.assets.precompile << /\A(?!active_admin).*\.(js|css)\z/
+   #config.assets.precompile += %w(active_admin.js global.js rsvp.js)
+   #config.assets.precompile += %w( *.js *.css )
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
