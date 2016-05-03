@@ -3,9 +3,9 @@
 A web app for online gambling companies.
 
 ## Setup
-* Create development database with name <i>fortunebet_development</i>
+* Create development database with name <i>fortune_development</i>
 
-* Create test database with name <i>fortunebet_test</i>
+* Create test database with name <i>fortune_test</i>
 
 * Run the database migration `rake db:migrate`
 
@@ -18,6 +18,11 @@ A web app for online gambling companies.
 Running the unit tests:
 
 	$ bundle exec rspec [directory or file name]
+
+Incase the test database is not being properly set up by `rspec`,
+run:
+
+	$ rake db:test:prepare
 
 ## Running
 - clone the project
