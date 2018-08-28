@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '~> 5.2', '>= 5.2.1'
 #gem 'rails', '~> 4.1.6'
 
 # Bundle edge Rails instead:
@@ -12,8 +12,8 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+  gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
@@ -39,10 +39,10 @@ group :production do
   gem 'thin'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'haml'
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem "devise", "> 2.2.1"
-gem 'activeadmin'
+gem 'activeadmin', '~> 1.3', '>= 1.3.1'
 gem "paperclip", "~> 3.4.2"
