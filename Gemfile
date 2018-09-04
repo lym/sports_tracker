@@ -20,10 +20,11 @@ end
 group :development do
   gem 'better_errors'
   gem 'capistrano', '~> 2.15.5'
+  gem 'rspec-rails', '~> 3.8'
 end
 
-gem "rspec-rails", ">= 2.10.1", :group => [:development, :test]
 group :test do
+  gem 'rspec-rails', '~> 3.8'
   gem "cucumber-rails", ">= 1.3.0"
   gem "capybara", ">= 1.1.2"
   gem "database_cleaner", ">= 0.7.2"
