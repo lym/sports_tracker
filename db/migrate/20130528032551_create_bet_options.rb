@@ -1,4 +1,4 @@
-class CreateBetOptions < ActiveRecord::Migration
+class CreateBetOptions < ActiveRecord::Migration[5.2]
   def change
     create_table :bet_options do |t|
       t.string :name

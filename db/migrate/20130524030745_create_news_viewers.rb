@@ -1,4 +1,4 @@
-class CreateNewsViewers < ActiveRecord::Migration
+class CreateNewsViewers < ActiveRecord::Migration[5.2]
   def change
     create_table :news_viewers do |t|
       t.string :title

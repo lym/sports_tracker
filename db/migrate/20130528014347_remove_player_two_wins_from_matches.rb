@@ -1,4 +1,4 @@
-class RemovePlayerTwoWinsFromMatches < ActiveRecord::Migration
+class RemovePlayerTwoWinsFromMatches < ActiveRecord::Migration[5.2]
   def up
     remove_column :matches, :player_two_wins
   end

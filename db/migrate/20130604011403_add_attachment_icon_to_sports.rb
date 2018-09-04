@@ -1,4 +1,4 @@
-class AddAttachmentIconToSports < ActiveRecord::Migration
+class AddAttachmentIconToSports < ActiveRecord::Migration[5.2]
   def self.up
     change_table :sports do |t|
       t.attachment :icon

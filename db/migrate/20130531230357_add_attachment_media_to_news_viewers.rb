@@ -1,4 +1,4 @@
-class AddAttachmentMediaToNewsViewers < ActiveRecord::Migration
+class AddAttachmentMediaToNewsViewers < ActiveRecord::Migration[5.2]
   def self.up
     change_table :news_viewers do |t|
       t.attachment :media
